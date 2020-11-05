@@ -1,0 +1,85 @@
+<html>
+<head>
+	<script type="text/javascript">
+	
+	// Function with parameter passing
+
+	//1
+	function dis(c,s)
+			{
+			document.write("Client Side Scripting :"+c);
+			document.write("<br />");
+			document.write("Server Side Scripting :"+s);
+			document.write("<br />");
+			}
+			
+			
+	dis("JavaScript","PHP");
+	dis("VBScript","ASP");
+
+		document.write("<br />");
+		document.write("<br />");
+		document.write("<br />");
+	
+	
+	
+	
+	//2
+	function calc()
+			{
+			var r=Math.pow(3,6);
+			var result=r+100;
+			document.write(result);
+			}
+	
+	calc();  //display the result
+
+
+		document.write("<br />");
+		document.write("<br />");
+		document.write("<br />");	
+	
+	
+	
+	
+	
+	
+	// Functions with returning
+	
+	
+	function calc()
+			{
+			var r=Math.pow(3,6);
+			var result=r+100;
+			return result;   // return the calculation for further useage
+			}
+	
+	//var res=calc();        // use the returned calculation
+	document.write(calc());    // use the returned calculation
+	
+	
+	
+	
+	// Functions with parameter passing and returning
+	
+	function calc(j,k,l)
+			{
+			var m=Math.pow(j,k);
+			var result=m+l;
+			return result;
+			}
+	
+	var res1=calc(2,8,200);
+	document.write(res1);
+	document.write("<hr />");
+	var res2=calc(4,8,100);
+	document.write(res2);
+	
+	
+	
+	
+	</script>
+</head>
+<body>
+</body>
+</html>
